@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click counter</title>
+    <style>
+        button{
+            font-size: 40px;
+            padding: 10px 40px;
+            border: 0 solid;
+            border-radius: 10px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.123);
+            color: white;
+            cursor: pointer;
+        }
+        button:nth-of-type(1) {
+            position: fixed;
+            top: 40px;
+            left: 50px;
+            background-color: green;
+        }
+        button:nth-of-type(2) {
+            position: fixed;
+            top: 40px;
+            right: 50px;
+            background-color: brown;
+        }
+
+        body {
+            line-height: 100vh;
+            font-size: 60px;
+            text-align: center;
+            margin: 0;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body>
+    <button>Dodaj</button>
+    <button>Odejmij</button>
+    <p>Liczba kliknięć: <span class="counter">0</span></p>
+    <script src="./counter.js"></script>
+</body>
+</html>
